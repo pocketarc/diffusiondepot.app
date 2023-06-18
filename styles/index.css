@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.prose a {
+    @apply underline hover:text-red-600 duration-200 transition-colors;
+}
+
+.prose figure img {
+    @apply mx-auto;
+}
+
+.prose figcaption {
+    @apply text-center text-sm text-gray-500 mt-2;
+}
+
+.prose pre {
+    @apply text-sm;
+}
+
+.prose h2 {
+    @apply font-title font-bold tracking-tight leading-tight md:leading-none;
+}
+
+.prose h3 {
+    @apply font-title font-bold tracking-tight leading-tight md:leading-none;
+}
+
+.prose code[class*="language-"], .prose pre[class*="language-"] {
+    @apply whitespace-pre-wrap;
+}
+
+#__next {
+    @apply h-full;
+}
+
+.hero-bg {
+    background-image: linear-gradient(
+            45deg,
+            hsl(240deg 100% 20%) 0%,
+            hsl(289deg 100% 21%) 11%,
+            hsl(315deg 100% 27%) 22%,
+            hsl(329deg 100% 36%) 33%,
+            hsl(337deg 100% 43%) 44%,
+            hsl(357deg 91% 59%) 56%,
+            hsl(17deg 100% 59%) 67%,
+            hsl(34deg 100% 53%) 78%,
+            hsl(45deg 100% 50%) 89%,
+            hsl(55deg 100% 50%) 100%
+    );
+}
