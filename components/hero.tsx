@@ -35,6 +35,7 @@ export default function Hero() {
                         </h1>
                         <p className="mt-6 sm:text-lg sm:leading-8 text-purple-200">
                             Free and open source.
+                            {' '}
                             <span className="whitespace-nowrap">
                                 For Windows, macOS, and Linux.
                             </span>
