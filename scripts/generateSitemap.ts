@@ -18,8 +18,8 @@ export default async function generateSitemap() {
             // Remove none route related parts of filename.
             const path = page
                 .replace('pages', '')
-                .replace(/(\.tsx|\.ts)/, '')
-                .replace(/(\.md|\.mdx)/, '');
+                .replace(/(\.tsx|\.ts)$/, '')
+                .replace(/(\.md|\.mdx)$/, '');
             // Remove the word index from route
             const route = path === '/index' ? '' : path;
 

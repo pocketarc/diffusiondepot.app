@@ -8,7 +8,7 @@ export default (page?: PostType | PageType) => {
 
     return {
         alternates: {
-            canonical: "https://diffusiondepot.app",
+            canonical: page?.url ? page?.url : "https://diffusiondepot.app",
         },
         manifest: '/favicon/site.webmanifest',
         themeColor: '#201A2E',
