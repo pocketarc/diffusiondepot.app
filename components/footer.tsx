@@ -15,7 +15,7 @@ const Footer = () => {
                     <div className="flex flex-row justify-end items-center lg:pl-4 lg:w-1/4">
                         <a
                             aria-label="Join me on Discord"
-                            href="https://discord.gg/C2asJd3MDv"
+                            href="https://discord.gg/uBzF2esKvn"
                             target="_blank"
                             rel="author me noopener noreferrer external"
                             className="mx-1 hover:text-white hover:bg-[#5865f2] py-3 px-3 rounded-xl duration-200 transition-colors">
