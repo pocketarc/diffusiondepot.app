@@ -41,7 +41,7 @@ const Footer = () => {
                         </a>
                         <a
                             aria-label="Follow me on Mastodon"
-                            href="https://mastodon.social/@pocketarc"
+                            href="https://tech.lgbt/@pocketarc"
                             target="_blank"
                             rel="author me noopener noreferrer external"
                             className="mx-1 hover:text-white hover:bg-[#6364FF] py-3 px-3 rounded-xl duration-200 transition-colors">
