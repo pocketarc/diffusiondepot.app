@@ -6,7 +6,6 @@ import remarkFigureCaption from '@microflash/remark-figure-caption'
 import {defaultSchema} from 'hast-util-sanitize';
 import merge from 'deepmerge';
 import mdx from '@next/mdx';
-import withExportImages from 'next-export-optimize-images';
 import bundleAnalyzer from '@next/bundle-analyzer';
 
 
@@ -39,4 +38,4 @@ const withBundleAnalyzer = bundleAnalyzer({
     enabled: process.env.ANALYZE === 'true',
 });
 
-export default withBundleAnalyzer(withExportImages(withMDX(nextConfig)));
+export default withBundleAnalyzer(withMDX(nextConfig));

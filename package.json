@@ -3,10 +3,10 @@
     "scripts": {
         "dev": "next",
         "analyze": "ANALYZE=true next build",
-        "build": "next build && next-export-optimize-images",
+        "build": "next build",
         "start": "next start",
-        "preview": "next build && next-export-optimize-images && wrangler dev",
-        "deploy": "next build && next-export-optimize-images && wrangler deploy",
+        "preview": "next build && wrangler dev",
+        "deploy": "next build && wrangler deploy",
         "typecheck": "tsc"
     },
     "dependencies": {
@@ -47,7 +47,6 @@
         "@types/rss": "^0.0.30",
         "autoprefixer": "^10.4.14",
         "globby": "^13.2.2",
-        "next-export-optimize-images": "^3.1.0",
         "postcss": "^8.4.27",
         "tailwindcss": "^3.3.3",
         "wrangler": "^4.54.0"
