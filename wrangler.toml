@@ -1,0 +1,8 @@
+name = "diffusion-depot"
+compatibility_date = "2025-12-01"
+send_metrics = false
+workers_dev = false
+
+[assets]
+directory = "out"
+not_found_handling = "404-page"

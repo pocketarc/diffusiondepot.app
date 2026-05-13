@@ -1,0 +1,11 @@
+services:
+  frontend:
+    image: oven/bun:latest
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: sh -c "bun install && bun run dev"
+    environment:
+      - NEXT_TELEMETRY_DISABLED=1
+    labels:
+      - dev.orbstack.domains=diffusiondepot.orb.local
