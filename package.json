@@ -1,12 +1,12 @@
 {
     "private": true,
     "scripts": {
-        "dev": "next",
-        "analyze": "ANALYZE=true next build",
-        "build": "next build",
-        "start": "next start",
-        "preview": "next build && wrangler dev",
-        "deploy": "next build && wrangler deploy",
+        "dev": "NEXT_TELEMETRY_DISABLED=1 next",
+        "analyze": "NEXT_TELEMETRY_DISABLED=1 ANALYZE=true next build",
+        "build": "NEXT_TELEMETRY_DISABLED=1 next build",
+        "start": "NEXT_TELEMETRY_DISABLED=1 next start",
+        "preview": "NEXT_TELEMETRY_DISABLED=1 next build && wrangler dev",
+        "deploy": "NEXT_TELEMETRY_DISABLED=1 next build && wrangler deploy",
         "typecheck": "tsc"
     },
     "dependencies": {
